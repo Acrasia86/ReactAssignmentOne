@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import BulletinBoard from './components/BulletinBoard';
 
 function App() {
+
+  let questionArray = [
+    {
+      question: 'Vad är tre fördelar med att använda React?',
+      answer: 'bla'
+    },
+    {
+      question: 'Vad betyder Single Page Application och vad skiljer det från en “vanlig” webbplats?',
+      answer: 'blabla'
+    },
+    {
+      question: 'Nämn tre skillnader mellan React och Angular.',
+      answer: 'blablabla'
+    }
+  ];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <BulletinBoard questions={questionArray}/>
     </div>
   );
 }
