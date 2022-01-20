@@ -3,9 +3,7 @@ import React from 'react';
 const PostLiked = () => {
 
   return (
-    <div>
-    <h2>Post liked</h2>
-    </div>
+    <li style={{color: 'green', fontWeight: 'bold'}}>Post liked</li>
   )
 }
 
